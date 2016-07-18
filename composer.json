@@ -1,0 +1,36 @@
+{
+    "name": "zomnium/flynn-wp",
+    "description": "A template for installing and running WordPress on Flynn",
+    "require": {
+        "php": "~5.6.0",
+        "WordPress/WordPress": "*"
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "WordPress/WordPress",
+                "version": "4.5.1",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/WordPress/WordPress/archive/4.5.1.zip"
+                }
+            }
+        },
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org"
+        }
+    ],
+    "scripts": {
+        "post-install-cmd": [
+            "rm -rf tmp/public.building tmp/public.old",
+            "mkdir -p tmp/public.building",
+            "cp -R vendor/WordPress/WordPress/* tmp/public.building",
+            "cp -R public/* tmp/public.building",
+            "touch public.built",
+            "mv public.built tmp/public.old && mv tmp/public.building public.built",
+            "rm -rf tmp/public.old"
+        ]
+    }
+}
