@@ -4,15 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e730de816374d5f23cc8dcf532a7ae20",
-    "content-hash": "6d7b0404a7d28b1d9770961a583b51e1",
+    "hash": "c9cfa2d3d92fcc3d86b17d573bd21598",
+    "content-hash": "92945eef99b4171096a90e0eeb7f8be7",
     "packages": [
         {
             "name": "WordPress/WordPress",
-            "version": "4.5.1",
+            "version": "4.6.1",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/WordPress/WordPress/archive/4.5.1.zip",
+                "url": "https://github.com/WordPress/WordPress/archive/4.6.1.zip",
                 "reference": null,
                 "shasum": null
             },
