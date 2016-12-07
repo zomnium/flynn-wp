@@ -34,5 +34,5 @@ More about working with Flynn, [read the docs](https://flynn.io/docs).
 To do
 -----
 
-[ ] File storage
-[ ] Improve default configuration
+- [ ] File storage 
+- [ ] Improve default configuration 
